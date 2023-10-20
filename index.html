@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quit</title>
+    <link rel="stylesheet" href="canvas.css" />
+    <link rel="stylesheet" href="present.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="jquery.js"></script>
+    <style>
+      /* CSS for the small image */
+      .small-image {
+          position: fixed;
+          top: 35%; /* Đặt top là 50% để căn giữa theo chiều dọc */
+          right: 50px; /* Đặt right là 0 để nằm bên phải */
+          transform: translate(0, -50%) rotate(-10deg); /* Dịch lên trên 50% kích thước của ảnh và nghiêng ảnh 30 độ */
+          width: 400px; /* Đặt kích thước mong muốn */
+          height: auto; /* Maintain aspect ratio */
+          z-index: 9999; /* Đảm bảo ảnh hiển thị phía trên */
+          box-shadow: 0 20px 20px rgba(255, 0, 0, 0.5);
+          border-radius: 20px;
+      }
+  </style>
+  </head>
+  <body>
+    
+    <div class="parent">
+      <canvas id="canvas"></canvas>
+      <section class="above-fold">
+        <div class="wrap-present">
+          <div class="present-box" id="present">
+            <div class="present">
+              <div class="img-wrap" id="present-image"></div>
+            </div>
+            <div class="side front"></div>
+            <div class="side back"></div>
+            <div class="side left"></div>
+            <div class="side right"></div>
+            <div class="side top">
+              <span class="to">
+                <span class="name" id="nametag"> </span>
+              </span>
+            </div>
+            <div class="side bottom"></div>
+          </div>
+        </div>
+        <p class="info-text">Click to Open</p>
+      </section>
+
+      <div id="card">
+        <h4 class="title-card">💘little coder💘</h4>
+
+        <img
+          src="z4104607673582_3d7f575eca07ad0b8551ee4bffb497c7.jpg"
+          class="honey"
+        />
+
+        <h4 class="content-card">
+          Happy Birthday Make A Wish. Dear brother, hope you receive everything
+          you wish for this year. You deserve the best! Thanks for being such a
+          great brother.💘
+        </h4>
+      </div>
+    <img class="small-image" src="Screenshot 2023-10-20 134710.png" alt="Small Image">
+    </div>
+    <audio autoplay loop  id="playAudio">
+      <source src="nhacnen.mp3">
+    </audio>
+  </body>
+  <script src="config.js"></script>
+  <script src="canvas.js"></script>
+  <script src="present.js"></script>
+  <script>
+    
+  </script>
+</html>
